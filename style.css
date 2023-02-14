@@ -1,0 +1,58 @@
+.rotate {
+    transform: rotate(180deg);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #cccccc;
+}
+body div{
+    margin: 20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+}
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    font-size: 20px;
+    min-width: 10px;
+}
+.green{
+    background-color: #4CAF50;
+}
+.red{
+    background-color: #af4c4c;
+}
+.black{
+    color: black;
+}
+button:hover {
+    transform: scale(1.1);
+}
+#number1, #number2 {
+    font-size: 36px;
+    text-align: center;
+    animation: add-number 0.5s ease-in-out;
+    margin: 5px 15px;
+}
+
+@keyframes add-number {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
