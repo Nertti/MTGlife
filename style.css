@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: #cccccc;
+    padding-top: 220px;
 }
 body div {
     margin: 20px;
@@ -58,9 +59,4 @@ button:hover {
 .low{
     position:absolute;
     bottom:0;
-}
-.center{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
