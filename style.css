@@ -1,19 +1,22 @@
 .rotate {
     transform: rotate(180deg);
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #cccccc;
 }
-body div{
+
+body div {
     margin: 20px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
 }
+
 button {
     border: none;
     color: white;
@@ -27,23 +30,21 @@ button {
     font-size: 25px;
     min-width: 10px;
 }
-.green{
+
+.green {
     background-color: #4CAF50;
 }
-.red{
+
+.red {
     background-color: #af4c4c;
 }
-.black{
+
+.black {
     color: black;
 }
+
 button:hover {
     transform: scale(1.1);
-}
-#number1, #number2 {
-    font-size: 45px;
-    text-align: center;
-    animation: add-number 0.5s ease-in-out;
-    margin: 5px 15px;
 }
 
 @keyframes add-number {
@@ -55,4 +56,24 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#number1, #number2 {
+    font-size: 45px;
+    text-align: center;
+    animation: add-number 0.5s ease-in-out;
+    margin: 5px 15px;
+}
+
+.low{
+    position:absolute;
+    bottom:0;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
