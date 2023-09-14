@@ -60,3 +60,6 @@ button:hover {
     position:absolute;
     bottom:0;
 }
+.no-zoom {
+    touch-action: manipulation;
+}
